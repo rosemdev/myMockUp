@@ -23,11 +23,6 @@ body{
 
 .firsSlide{
   background-image: url("../img/bacground.png");
-
-
-
-
-
 }
 
 header{
@@ -139,7 +134,7 @@ div.purpose{
   /*flex-wrap:wrap;
   align-content:space-around;*/
   position: relative;
-  
+
 
 }
 
@@ -242,7 +237,7 @@ button.buy{
 }
 
 .big_cart{
-  
+
   display: block;
   height: 500px;
   width: 400px;
@@ -323,7 +318,7 @@ button.buy{
 
 .fourthSlide{
   background-color: #561d21;
-  height: 600px;
+  height: 900px;
 }
 
 div.gallery {
@@ -337,7 +332,7 @@ div.gallery:hover {
 
 div.gallery img {
     width: 100%;
-    height: auto;
+
 }
 
 div.desc {
@@ -354,6 +349,7 @@ div.desc {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
+
 }
 
 @media only screen and (max-width: 700px){
@@ -374,4 +370,29 @@ div.desc {
     display: table;
     clear: both;
 }
-  
+
+.user p {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin: 40px 0 40px 0;
+
+}
+
+.user button{
+  padding: 7px 21px;
+  font-size: 20px;
+  background-color: #ff2400;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  margin: auto;
+}
+
+.user button:hover{
+  background-color: #ca9362;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

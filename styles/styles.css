@@ -1,38 +1,63 @@
 body{
   margin: 0;
   padding: 0;
+  }
+
+  p{
+     -webkit-margin-before: 0;
+     -webkit-margin-after: 0;
+
+
+  }
+  .slideName {
+  text-align: center;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 25px;
+  font-size: 44px;
+  color: white;
+  }
+
+  .slideName:hover {
+      color: #1aa3ff;
+  }
+
+.firsSlide{
+  background-image: url("../img/bacground.png");
+
+
+
+
+
 }
 
-.firsSlide {
+header{
   display: flex;
-  align-items: center
-
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
+
 /*.black-container {
   outline: 80px solid rgba(0, 0, 0, .6);
 
 }*/
 
 img.bacground{
-  display: block;
+
   margin: auto;
   width: 100%;
 
 }
 
 img.logo{
-  position: absolute;
-  top: 10px;
-  left: 20px;
-}
-nav{
-
-  position: absolute;
-  top: 8px;
-  right: 1px;
-
+  margin:20px;
 
 }
+
 .menu > ul{
   list-style: none;
   display: flex;
@@ -46,23 +71,24 @@ nav{
   cursor: pointer;
   color: white;
   opacity: 0.3;
-  font-size: 15px;
+  font-size: 20px;
 }
 li a:hover{
   color: white;
 
 }
-div.title {
-  position: absolute;
-  display: flex;
-  align-self: flex-start;
-  text-align:left;
+p.title {
   color: white;
   width: 100%;
   font-size: 60px;
   padding: 34px;
-  margin-left: 128px;
+  width: auto;
+  position: absolute;
+  left: 145px;
 
+}
+p.title:hover{
+  color: #1aa3ff;
 }
 
 
@@ -72,12 +98,13 @@ div.purpose{
   left: 20px;
   text-align:left;
   color: white;
-  font-size: 45px;
+  font-size: 65px;
 
 }
 
 .purpose > p{
   display: inline;
+  vertical-align: middle;
 }
 .purpose button{
   background-color: red;
@@ -89,6 +116,7 @@ div.purpose{
   display: inline-block;
   font-size: 25px;
 }
+
 .purpose button:hover{
   background-color: #ca9362;
   color: black;
@@ -97,15 +125,9 @@ div.purpose{
 
 .secondSlide{
   background-color: #ca9362;
-  height: 900px;
+  height: 760px;
 }
-.secondSlide > p{
-  text-align: center;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 25px;
-  font-size: 44px;
-  color: white;
-}
+
 
 .container {
 
@@ -116,6 +138,8 @@ div.purpose{
   margin: 39px 0 25px 25px;
   /*flex-wrap:wrap;
   align-content:space-around;*/
+  position: relative;
+  
 
 }
 
@@ -126,12 +150,15 @@ div.purpose{
   background-color: #561d21;
   border-radius: 5px;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 .cart > img {
   width: 160px;
   height: 170px;
   margin: auto;
   padding: 18px 18px 0px  52px;
+
 }
 .bottom{
   display: flex;
@@ -179,19 +206,172 @@ button.buy{
   font-size: 20px;
 }
 
-/*.overlay {
+.overlay {
   position: absolute;
-  top: 0;
+  top: 50%;
   bottom: 0;
-  left: 0;
+  left: 50%;
   right: 0;
   height: 300px;
   width: 250px;
   opacity: 0;
   transition: .5s ease;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
   background-color: #4a4d53;
+}
+
+.container:hover .cart {
+  opacity: 0.3;
 }
 
 .container:hover .overlay {
   opacity: 1;
-}*/
+}
+
+.text{
+  color: white;
+  background-color: #4CAF50;
+  font-size: 23px;
+  position: absolute;
+  left: 45px;
+}
+.thirdSlide{
+  background-color: #ca9362;
+  height: 1000px;
+}
+
+.big_cart{
+  
+  display: block;
+  height: 500px;
+  width: 400px;
+  background-color: #561d21;
+  border-radius: 5px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  position: relative;
+}
+
+.big_cart > img {
+  margin: auto;
+  padding: 18px 18px 0px  64px;
+
+}
+.big_cart.bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 35px 0 35px;
+  position: absolute;
+  bottom: -8px;
+}
+.big_cart > p{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+.big_cart p.price{
+  text-align: left;
+  font-size: 25px;
+  color: white;
+}
+.big_cart button{
+
+  background-color: #ff2400;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  display: inline-block;
+
+}
+.big_cart button > img{
+  width: 25px;
+  height: 25px;
+
+}
+
+
+.big_cart button.buy{
+
+  padding: 7px 21px;
+  font-size: 20px;
+}
+
+.Details{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px;
+}
+
+
+.description{
+  width: 60%;
+  height: 500px;
+
+}
+.description > p{
+  font-size: 25px;
+  color: white;
+  padding: 0px 40px 20px 40px;
+}
+
+.fourthSlide{
+  background-color: #561d21;
+  height: 600px;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+div.gallery:hover {
+    border: 3px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  

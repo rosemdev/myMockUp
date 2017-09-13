@@ -24,23 +24,34 @@ body{
 
 .firsSlide{
   background-image: url("../img/bacground.png");
+  height: 1154px;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.firstSlide p {
+  padding: 1rem;
+}
+
+.firstSlide{
+  margin: 1rem;
+}
+
+.purpose{
+  margin: auto 2rem;
 }
 
 header{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items:flex-start;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-/*.black-container {
-  outline: 80px solid rgba(0, 0, 0, .6);
-
-}*/
+header:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
 img.bacground{
 
@@ -57,41 +68,36 @@ img.logo{
 .menu > ul{
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
+  padding: 0 2rem;
 
 }
-.menu > ul li a{
+.menu  ul li a{
   display: block;
-  padding: 0 20px 0 20px;
+  padding: 0 1rem;
   text-decoration: none;
   cursor: pointer;
   color: white;
   opacity: 0.3;
   font-size: 20px;
 }
-li a:hover{
+
+.menu ul li a:hover{
+  opacity: 1;
   color: white;
 
 }
-p.title {
+
+h1 {
   color: white;
   width: 100%;
   font-size: 60px;
-  padding: 34px;
+  padding: 0 25px;
   width: auto;
-  position: absolute;
-  left: 145px;
-
+  margin-right: auto; 
 }
-p.title:hover{
-  color: #1aa3ff;
-}
-
 
 div.purpose{
-  position: absolute;
-  top: 50%;
-  left: 20px;
   text-align:left;
   color: white;
   font-size: 65px;
@@ -147,7 +153,6 @@ div.purpose{
   border-radius: 5px;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   transition: .5s ease;
-  backface-visibility: hidden;
 }
 .cart > img {
   
@@ -161,7 +166,7 @@ div.purpose{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 35px 0 35px;
+  margin: 35px 35px 0 35px;
 }
 .cart > p{
   text-align: center;
@@ -203,14 +208,10 @@ button.buy{
 }
 
 .overlay {
-  position: absolute;
-  top: 50%;
-  bottom: 0;
-  left: 50%;
-  right: 0;
-  height: 300px;
+
+  /*height: 300px;
   width: 250px;
-  opacity: 0;
+  opacity: 0;*/
   transition: .5s ease;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
@@ -384,6 +385,9 @@ div.desc:hover{
     display: table;
     clear: both;
 }
+.user{
+  text-align: center;
+}
 
 .user p {
   color: white;
@@ -427,6 +431,7 @@ div.desc:hover{
   padding: 46px;
   position: relative;
   top: 110px;
+  float: right;
 
 
   
@@ -443,6 +448,12 @@ i{
   color: red;
 }
 
+.use {
+  background-color: #561d21;
+  height: 300px;
+
+}
+
 
 footer{
   height: 300px;
@@ -450,6 +461,7 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex-wrap: wrap;
    
 }
 .footer_logo{
@@ -458,10 +470,15 @@ footer{
   margin: 20px;
 }
 
+.icons{
+  display: flex;
+}
+
 .icons svg{
   fill: white;
   width: 40px;
   height: 60px;
+  margin: 0 5px;
 
 
  
@@ -481,4 +498,9 @@ footer p{
  }
  footer p:hover{
   color: red;
+ }
+
+ .lamp img{
+
+
  }

@@ -9,6 +9,7 @@ body{
 
 
   }
+ 
   .slideName {
   text-align: center;
   -webkit-margin-before: 0;
@@ -149,10 +150,10 @@ div.purpose{
   backface-visibility: hidden;
 }
 .cart > img {
-  width: 160px;
+  
   height: 170px;
   margin: auto;
-  padding: 18px 18px 0px  52px;
+  padding: 18px 18px 0px  70px;
 
 }
 .bottom{
@@ -318,7 +319,14 @@ button.buy{
 
 .fourthSlide{
   background-color: #561d21;
-  height: 900px;
+  height: 1000px;
+}
+.Demo{
+  height: 660px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 div.gallery {
@@ -336,9 +344,14 @@ div.gallery img {
 }
 
 div.desc {
-    padding: 15px;
+    padding: 30px;
     text-align: center;
     color: white;
+    font-size: 25px;
+}
+div.desc:hover{
+    background-color: #ca9362;
+  color: black;
 }
 
 * {
@@ -346,9 +359,10 @@ div.desc {
 }
 
 .responsive {
-    padding: 0 6px;
-    float: left;
+    padding: 20px 10px;
+    /*float: left;*/
     width: 24.99999%;
+
 
 }
 
@@ -375,7 +389,7 @@ div.desc {
   color: white;
   font-size: 50px;
   text-align: center;
-  margin: 40px 0 40px 0;
+  margin: 50px 0 40px 0;
 
 }
 
@@ -395,4 +409,76 @@ div.desc {
   background-color: #ca9362;
   color: black;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
 }
+
+.fivethSlide{
+  background-image: url(../img/8.jpg);
+  height: 1050px;
+  
+  
+}
+
+.features{
+  
+  width: 40%;
+  background-color: rgb(23, 23, 23);
+  opacity: 0.7;
+  padding: 46px;
+  position: relative;
+  top: 110px;
+
+
+  
+}
+
+.features > li{
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+  list-style: none;
+}
+i{
+  padding: 10px 20px;
+  color: red;
+}
+
+
+footer{
+  height: 300px;
+  background-color: #201414;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+   
+}
+.footer_logo{
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.icons svg{
+  fill: white;
+  width: 40px;
+  height: 60px;
+
+
+ 
+}
+
+svg:hover{
+  fill: red;
+}
+
+footer p{ 
+  color: white;
+  font-size: 45px;
+  padding: 0px 25px 0 25px;
+  display: inline;
+
+
+ }
+ footer p:hover{
+  color: red;
+ }

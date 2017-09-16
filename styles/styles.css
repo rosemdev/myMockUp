@@ -128,25 +128,23 @@ div.purpose{
 .secondSlide{
   background-color: #ca9362;
   height: 760px;
+  padding: 50px;
 }
 
 
 .container {
 
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 39px 0 25px 25px;
+  width: 100%;
   /*flex-wrap:wrap;
   align-content:space-around;*/
-  position: relative;
 
 
 }
 
 .cart{
-  display: block;
   height: 300px;
   width: 270px;
   background-color: #561d21;
@@ -158,16 +156,19 @@ div.purpose{
   
   height: 170px;
   margin: auto;
-  padding: 18px 18px 0px  70px;
+  display: block;
+
 
 }
 .bottom{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 35px 35px 0 35px;
+  padding: 15px;
+   margin-top: 15px;
 }
+
 .cart > p{
   text-align: center;
   color: white;
@@ -207,24 +208,6 @@ button.buy{
   font-size: 20px;
 }
 
-.overlay {
-
-  /*height: 300px;
-  width: 250px;
-  opacity: 0;*/
-  transition: .5s ease;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-  background-color: #4a4d53;
-}
-
-.container:hover .cart {
-  opacity: 0.3;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
 
 .text{
   color: white;
@@ -443,6 +426,7 @@ div.desc:hover{
   font-size: 25px;
   list-style: none;
 }
+
 i{
   padding: 10px 20px;
   color: red;
@@ -450,7 +434,7 @@ i{
 
 .use {
   background-color: #561d21;
-  height: 650px;
+  height: 550px;
   padding: 20px;
   }
 
@@ -470,8 +454,8 @@ form{
 }
 
 form textarea{
-  width: 350px;
-  height:100px;
+  width: 385px;
+  height:200px;
   padding:15px 20px;
   color: red;
   font-size: 20px;
@@ -507,12 +491,13 @@ form button{
 }*/
 
 form a{
+  margin-top: 10px;
   font-size: 25px;
   text-decoration: none;
   color:white;
   border: 1px solid white;
   border-radius: 5px;
-  padding: 3px 40px;
+  padding: 1px 127px;
 
 }
 form a:hover{
@@ -525,11 +510,11 @@ form a:hover{
 
 
 footer{
-  height: 300px;
+  height: 270px;
   background-color: #201414;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   padding: 15px;
    
@@ -546,8 +531,8 @@ footer{
 
 .icons svg{
   fill: white;
-  width: 40px;
-  height: 60px;
+  width: 30px;
+  height: 27px;
   margin: 0 5px;
 
 
@@ -560,17 +545,25 @@ svg:hover{
 
 footer p{ 
   color: white;
-  font-size: 45px;
+  font-size: 25px;
   padding: 0px 25px 0 25px;
   display: inline;
 
 
  }
- footer p:hover{
-  color: red;
+ .footer_logo p{
+    font-size: 45px;
  }
 
- .lamp img{
+ footer p:hover{
+  color: red; 
+ }
 
+.copyright{
+  font-size: 22px;
+  color: white;
+  opacity: 0.3;
+  padding: 10px;
 
+  
  }
